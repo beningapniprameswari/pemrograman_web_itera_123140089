@@ -1,11 +1,11 @@
-# 📚 Aplikasi Manajemen Tugas Mahasiswa
+# Aplikasi Manajemen Tugas Mahasiswa
 
-## 🧩 Deskripsi Singkat
+## Deskripsi Singkat
 Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik seperti tugas kuliah.  
 Pengguna dapat menambahkan, mengedit, menandai selesai, dan menghapus tugas dengan mudah.  
 Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga data tidak hilang meskipun halaman direfresh.
 
-## 🖼️ Screenshot Aplikasi
+## Screenshot Tampilan WEB
 
 ### 1. Tampilan Awal & Tambah Tugas
 <img width="1323" height="618" alt="image" src="https://github.com/user-attachments/assets/0f6f99b7-1e0d-4181-9407-b6d83b693a0b" />
@@ -30,7 +30,7 @@ Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga d
    - Pilih “Open with Live Server”
    - Browser akan otomatis membuka aplikasi
 
-✅ **Daftar Fitur yang Telah Diimplementasikan**
+## Daftar Fitur yang Telah Diimplementasikan
 1. Menambahkan tugas baru (nama tugas, mata kuliah, deadline)
 2. Menandai tugas sebagai selesai/belum selesai
 3. Mengedit tugas yang sudah ada
@@ -39,7 +39,7 @@ Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga d
 6. Menampilkan jumlah tugas belum selesai
 7. Validasi input form
 
-🧠 **Penjelasan Teknis**
+## Penjelasan Teknis
 1. Penyimpanan Data Menggunakan localStorage
    Aplikasi ini menggunakan localStorage untuk menyimpan data tugas agar tetap ada meskipun halaman direfresh.
    // Simpan data ke localStorage
