@@ -42,10 +42,11 @@ Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga d
 ## Penjelasan Teknis
 1. Penyimpanan Data Menggunakan localStorage
    Aplikasi ini menggunakan localStorage untuk menyimpan data tugas agar tetap ada meskipun halaman direfresh.
-   // Simpan data ke localStorage
-localStorage.setItem('tasks', JSON.stringify(tasks));
 
-// Ambil data dari localStorage
-const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    // Simpan data ke localStorage
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+
+    // Ambil data dari localStorage
+    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 
