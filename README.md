@@ -22,10 +22,11 @@ Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga d
    ```bash
    git clone https://github.com/beningapinprameswari/pemrograman_web_itera_123140089.git
 2. **Masuk ke folder project**
+   ```bash
    cd pemrograman_web_itera_123140089
-3. **Buka project di Visual Studio Code**
+4. **Buka project di Visual Studio Code**
    code
-4. **Jalankan dengan Live Server**
+5. **Jalankan dengan Live Server**
    - Klik kanan pada file index.html
    - Pilih “Open with Live Server”
    - Browser akan otomatis membuka aplikasi
