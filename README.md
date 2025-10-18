@@ -8,15 +8,13 @@ Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga d
 ## 🖼️ Screenshot Aplikasi
 
 ### 1. Tampilan Awal & Tambah Tugas
-![Tampilan Awal](./screenshots/ss1.png)
+<img width="1323" height="618" alt="image" src="https://github.com/user-attachments/assets/0f6f99b7-1e0d-4181-9407-b6d83b693a0b" />
 
 ### 2. Tugas Tersimpan & Filter
-![Tugas Tersimpan](./screenshots/ss2.png)
+<img width="1344" height="903" alt="image" src="https://github.com/user-attachments/assets/454b4ff3-7645-4d0a-a583-736bb3706915" />
 
 ### 3. Edit & Hapus Tugas
-![Edit Tugas](./screenshots/ss3.png)
-
----
+<img width="1175" height="588" alt="image" src="https://github.com/user-attachments/assets/17ff4326-c77e-472a-9771-0dee7310bfa1" />
 
 ## ⚙️ Cara Menjalankan Aplikasi
 
