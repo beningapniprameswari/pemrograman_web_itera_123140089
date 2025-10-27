@@ -1,55 +1,40 @@
-# Aplikasi Manajemen Tugas Mahasiswa
+# To-Do & Schedule Dashboard
 
 ## Deskripsi Singkat
-Aplikasi ini dibuat untuk membantu mahasiswa mengelola aktivitas akademik seperti tugas kuliah.  
-Pengguna dapat menambahkan, mengedit, menandai selesai, dan menghapus tugas dengan mudah.  
-Semua data tersimpan **lokal di browser** menggunakan `localStorage`, sehingga data tidak hilang meskipun halaman direfresh.
+Aplikasi ini merupakan To-Do dan Schedule Manager berbasis web
+yang membantu pengguna mencatat, mengatur, dan memantau tugas serta jadwal kegiatan harian.
+Seluruh data tersimpan secara lokal (LocalStorage), sehingga tetap tersedia meskipun halaman direfresh.
 
-## Screenshot Tampilan WEB
+## Fitur-fitur Utama
+- ✅ Tambah, edit, hapus tugas
+- 🗓️ Tambah, edit, hapus jadwal kuliah/kegiatan
+- 🔍 Filter tugas (Semua / Aktif / Selesai)
+- 📊 Statistik progres tugas dalam bentuk persentase
+- 🌡️ Informasi cuaca terkini di Bandar Lampung menggunakan API
+- 🌙 Mode gelap (Dark Mode) dengan penyimpanan preferensi
+- 💾 Penyimpanan otomatis menggunakan LocalStorage
 
-### 1. Tampilan Awal & Tambah Tugas
-<img width="1323" height="618" alt="image" src="https://github.com/user-attachments/assets/0f6f99b7-1e0d-4181-9407-b6d83b693a0b" />
-
-### 2. Tugas Tersimpan & Filter
-<img width="1344" height="903" alt="image" src="https://github.com/user-attachments/assets/454b4ff3-7645-4d0a-a583-736bb3706915" />
-
-### 3. Edit & Hapus Tugas
-<img width="1175" height="588" alt="image" src="https://github.com/user-attachments/assets/17ff4326-c77e-472a-9771-0dee7310bfa1" />
-
-## ⚙️ Cara Menjalankan Aplikasi
-
-1. **Clone repository ke dalam komputer**
-   ```bash
-   git clone https://github.com/beningapinprameswari/pemrograman_web_itera_123140089.git
-2. **Masuk ke folder project**
-   ```bash
-   cd pemrograman_web_itera_123140089
-4. **Buka project di Visual Studio Code**
-   code
-5. **Jalankan dengan Live Server**
-   - Klik kanan pada file index.html
-   - Pilih “Open with Live Server”
-   - Browser akan otomatis membuka aplikasi
-
-## Daftar Fitur yang Telah Diimplementasikan
-1. Menambahkan tugas baru (nama tugas, mata kuliah, deadline)
-2. Menandai tugas sebagai selesai/belum selesai
-3. Mengedit tugas yang sudah ada
-4. Menghapus tugas yang tidak diperlukan
-5. Filter dan pencarian tugas berdasarkan mata kuliah
-6. Menampilkan jumlah tugas belum selesai
-7. Validasi input form
-
-## Penjelasan Teknis
-1. Penyimpanan Data Menggunakan localStorage
-   Aplikasi ini menggunakan localStorage untuk menyimpan data tugas agar tetap ada meskipun halaman direfresh.
-
-    // Simpan data ke localStorage
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-
-    // Ambil data dari localStorage
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+## Screenshot Aplikasi
+<img width="1887" height="968" alt="image" src="https://github.com/user-attachments/assets/11b8a5c0-97bc-4bde-8563-ed218b2d64cd" />
+<img width="1874" height="956" alt="image" src="https://github.com/user-attachments/assets/cd5a8e48-4444-4fc9-93d0-13e1d3e0eb1a" />
 
 
+## Fitur ES6+ yang Digunakan
+- class (Task, Schedule, Storage)
+- Arrow function (=>)
+- Template literal (`${value}`)
+- Destructuring & optional chaining (data?.current_weather)
+- LocalStorage API
+- fetch() dan async/await
+- const & let
+- Default parameter function (load(key, fallback = []))
 
+## Teknologi yang Digunakan
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6+)
 
+## Cara Menjalankan
+$ git clone https://github.com/username/repo-name.git
+$ cd repo-name
+# Buka file index.html langsung di browser
