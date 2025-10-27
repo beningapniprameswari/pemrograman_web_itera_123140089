@@ -36,10 +36,6 @@ Seluruh data tersimpan secara lokal (LocalStorage), sehingga tetap tersedia mesk
 - Vanilla JavaScript (ES6+)
 
 ## Cara Menjalankan
-$ git clone https://github.com/username/repo-name.git
-$ cd repo-name
-Buka file index.html langsung di browser
-## ⚙️ Cara Menjalankan Aplikasi
 
 1. ```bash
    git clone https://github.com/username/repo-name.git
@@ -47,4 +43,4 @@ Buka file index.html langsung di browser
 2. ```bash
    cd repo-name
    
-4. Buka file index.html langsung di browser
+3. Buka file index.html langsung di browser
