@@ -15,7 +15,8 @@ Seluruh data tersimpan secara lokal (LocalStorage), sehingga tetap tersedia mesk
 - 💾 Penyimpanan otomatis menggunakan LocalStorage
 
 ## Screenshot Aplikasi
-<img width="1887" height="968" alt="image" src="https://github.com/user-attachments/assets/11b8a5c0-97bc-4bde-8563-ed218b2d64cd" />
+<img width="1870" height="949" alt="image" src="https://github.com/user-attachments/assets/f6136ff7-b283-459a-89e0-8dd39fbbd0bd" />
+
 <img width="1874" height="956" alt="image" src="https://github.com/user-attachments/assets/cd5a8e48-4444-4fc9-93d0-13e1d3e0eb1a" />
 
 
