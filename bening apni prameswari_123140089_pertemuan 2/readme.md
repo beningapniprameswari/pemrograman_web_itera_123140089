@@ -38,4 +38,4 @@ Seluruh data tersimpan secara lokal (LocalStorage), sehingga tetap tersedia mesk
 ## Cara Menjalankan
 $ git clone https://github.com/username/repo-name.git
 $ cd repo-name
-# Buka file index.html langsung di browser
+Buka file index.html langsung di browser
