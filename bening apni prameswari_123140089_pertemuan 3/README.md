@@ -42,12 +42,17 @@ Ini adalah aplikasi React sederhana yang dibuat sebagai Tugas Praktikum untuk me
 * Penyimpanan: localStorage Browser.
 
 
-## Cara Menjalankan
+## ⚙️ Cara Menjalankan Aplikasi
 
-1. bash
-   git clone https://github.com/username/repo-name.git
-   
-2. bash
-   cd repo-name
-   
-3. Buka file index.html langsung di browser
+1. **Clone repository ke dalam komputer**
+   ```bash
+   git clone https://github.com/beningapinprameswari/pemrograman_web_itera_123140089.git
+2. **Masuk ke folder project**
+   ```bash
+   cd pemrograman_web_itera_123140089
+4. **Buka project di Visual Studio Code**
+   code
+5. **Jalankan dengan Live Server**
+   - Klik kanan pada file index.html
+   - Pilih “Open with Live Server”
+   - Browser akan otomatis membuka aplikasi
