@@ -52,4 +52,7 @@ Terdapat beberapa class utama dalam program:
    python perpustakaan.py
 
 ## 🖼️ Screenshot Hasil Program
+<img width="1200" height="823" alt="image" src="https://github.com/user-attachments/assets/587029a8-7e5e-4615-a671-396dee4d8153" />
+<img width="983" height="556" alt="image" src="https://github.com/user-attachments/assets/3a957a12-e0f0-4f8a-8354-8872619d7c24" />
+
 
