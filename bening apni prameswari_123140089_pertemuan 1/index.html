@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manajemen Tugas Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Manajemen Tugas Mahasiswa</h1>
+  </header>
+
+  <section class="task-form">
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Nama Tugas" required>
+      <input type="text" id="courseName" placeholder="Mata Kuliah" required>
+      <input type="date" id="deadline" required>
+      <button type="submit">Tambah</button>
+      <button type="reset" id="resetBtn">Reset</button>
+      <p id="formError" class="error"></p>
+    </form>
+  </section>
+
+  <section class="filter">
+    <select id="filterStatus">
+      <option value="all">Semua</option>
+      <option value="pending">Belum Selesai</option>
+      <option value="completed">Selesai</option>
+    </select>
+    <input type="text" id="filterCourse" placeholder="Cari mata kuliah...">
+    <input type="text" id="searchText" placeholder="Cari nama tugas...">
+    <select id="sortBy">
+      <option value="deadline_asc">Deadline Terdekat</option>
+      <option value="deadline_desc">Deadline Terjauh</option>
+      <option value="created_desc">Terbaru</option>
+      <option value="created_asc">Terlama</option>
+    </select>
+  </section>
+
+  <p id="taskCount"></p>
+
+  <section id="taskList" class="task-list"></section>
+
+  <div id="editModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <h3>Edit Tugas</h3>
+      <form id="editForm">
+        <input type="hidden" id="editId">
+        <input type="text" id="editName" required>
+        <input type="text" id="editCourse" required>
+        <input type="datetime-local" id="editDeadline" required>
+        <p id="editError" class="error"></p>
+        <div class="modal-actions">
+          <button type="submit">Simpan</button>
+          <button type="button" id="cancelEdit">Batal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
