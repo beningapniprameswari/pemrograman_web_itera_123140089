@@ -1,0 +1,273 @@
+:root {
+  --maroon: #800000;
+  --maroon-dark: #5a0000;
+  --bg: #ffffff;
+  --text: #222;
+  --muted: #666;
+  --card: #fafafa;
+  --border: #e6e6e6;
+  --shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --muted: #aaa;
+  --card: #1d1d1d;
+  --border: #2a2a2a;
+  --shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+button {
+  background: var(--maroon);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+button:hover {
+  background: var(--maroon-dark);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 3px rgba(128,0,0,0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  background: var(--maroon);
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.big {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.top-panel {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.progress-bar-bg {
+  height: 10px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0;
+  background: var(--maroon);
+  transition: width 0.3s ease;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.filter {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+}
+.filter.active {
+  background: var(--maroon);
+  color: #fff;
+  border-color: var(--maroon);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.checkbox {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+.title {
+  font-weight: 600;
+}
+
+.item-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.actions button {
+  background: transparent;
+  color: var(--muted);
+  padding: 6px;
+  border-radius: 6px;
+}
+.actions button:hover {
+  color: var(--text);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

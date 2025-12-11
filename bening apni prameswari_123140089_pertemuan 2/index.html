@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard Mahasiswa — Bening Apni Prameswari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header card">
+      <div class="header-left">
+        <div class="avatar">BA</div>
+        <div>
+          <h1>Hai, <span class="name">Bening Apni Prameswari!</span></h1>
+          <p class="muted">Atur tugas dan jadwal kuliahmu</p>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="stat-row">
+          <div class="stat small card">
+            <small class="muted">Total Tugas</small>
+            <div id="totalTasks" class="big">0</div>
+          </div>
+          <div class="stat small card">
+            <small class="muted">Aktif</small>
+            <div id="activeTasks" class="big">0</div>
+          </div>
+          <div class="stat small card">
+            <small class="muted">Selesai</small>
+            <div id="doneTasks" class="big">0</div>
+          </div>
+          <div class="stat small card">
+            <small class="muted">Cuaca (Bandar Lampung)</small>
+            <div id="weatherInfo" class="big">--</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="top-panel card">
+      <div class="progress-block">
+        <h3>Progress Tugas</h3>
+        <div class="progress-bar-bg">
+          <div id="progressBar" class="progress-bar-fill"></div>
+        </div>
+        <small id="progressText" class="muted">0% selesai</small>
+      </div>
+
+      <div class="quote-block">
+        <h4>You Can Do It</h4>
+      </div>
+    </section>
+
+    <main class="content-grid">
+      <section class="panel card">
+        <div class="panel-header">
+          <h2>📝 Daftar Tugas</h2>
+        </div>
+
+        <div class="controls">
+          <input id="taskInput" type="text" placeholder="Tugas PAW Praktikum 2">
+          <button id="addTaskBtn">Tambah</button>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="active">Aktif</button>
+          <button class="filter" data-filter="done">Selesai</button>
+        </div>
+
+        <div id="taskList" class="list"></div>
+      </section>
+
+      <aside class="panel card">
+        <div class="panel-header">
+          <h2>📚 Jadwal Kuliah</h2>
+        </div>
+
+        <div class="controls">
+          <input id="scheduleInput" type="text" placeholder="Matkul • Hari • Jam">
+          <button id="addScheduleBtn">Tambah</button>
+        </div>
+
+        <div id="scheduleList" class="list"></div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <label class="dark-label">
+        <input id="darkToggle" type="checkbox">
+        Dark Mode
+      </label>
+      <div class="footer-muted">© Dashboard — Bening Apni Prameswari</div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
