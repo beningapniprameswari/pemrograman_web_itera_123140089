@@ -1,0 +1,5 @@
+pyramid
+SQLAlchemy
+psycopg2-binary
+alembic
+waitress
