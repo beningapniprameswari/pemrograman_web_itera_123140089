@@ -10,10 +10,6 @@ Aplikasi bersifat **interaktif**, berjalan sepenuhnya di sisi klien (client-side
 
 ## 🖼️ Screenshot Aplikasi
 
-> ⚠️ **Catatan:** Ganti bagian ini dengan screenshot asli aplikasi.
-
-Minimal sertakan 3 screenshot berikut:
-
 1. **Tampilan Utama Aplikasi** – Menampilkan daftar tugas mahasiswa
 <img width="1697" height="943" alt="image" src="https://github.com/user-attachments/assets/85ee72c9-2a98-478a-98be-9b88136b7ad4" />
 
